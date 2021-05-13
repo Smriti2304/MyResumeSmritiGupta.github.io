@@ -1,0 +1,382 @@
+/* --------------------------------------------Styling---------------------------------------------------- */
+
+/* ------------------------------------------------Generals---------------------------------------------------- */
+
+*{
+    padding: 0;
+    margin: 0;;
+} 
+html{
+    scroll-behavior: smooth;
+}
+
+
+h1,h2,h3{
+font-family: 'Merienda', cursive;
+font-size: 50px;
+font-weight: bolder;
+}
+
+
+h2,h3{
+    font-family: 'Merienda', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    }
+
+
+h4{
+    font-family: 'Merienda', cursive;
+}
+
+
+p{
+    font-family: 'Playball', cursive;
+    font-size: 20px;
+    font-weight: 80px;
+}
+
+
+body{
+    background: url("https://media.giphy.com/media/9bTjZrytydVRK/giphy.gif");
+  
+}
+
+
+/* --------------------------------------------------Cover Image---------------------------------------------------- */
+
+.bgimg{
+    background: url('../images/bg.jpg');
+    background-size: cover  ;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    background-position: center ;
+    background-repeat: no-repeat;
+   
+}
+
+
+/* -------------------------------------------------------Navigation ------------------------------------------------*/
+    
+
+  
+  nav ul {
+    text-align: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  }
+
+  
+  nav ul li {
+    display: inline-block;
+  }
+
+  
+  nav ul li a {
+    padding: 18px;
+    font-family: "Open Sans";
+    text-transform:uppercase;
+    color: rgba(0, 35, 122, 0.5);
+    font-size: 15px;
+    font-weight: bolder;
+    text-decoration: none;
+    display: block;
+  }
+
+  
+  nav ul li a:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    background: rgba(235, 0, 0, 0.1);
+    color: rgba(0, 35, 122, 0.7);
+  }
+
+  
+  /* -------------------------------------------------HeaderSet-------------------------------------------------------- */
+
+.headerset{
+    padding-top: 250px;
+    padding-right: 520px;
+    box-sizing: border-box;
+    color: whitesmoke;
+}
+
+
+.headerset h1{
+    font-size: 45x;
+
+}
+
+
+.headerset h2{
+    font-size: 38px;
+}
+
+
+
+/* --------------------------------------------------------Objective--------------------------------------------------- */
+
+
+.objective{
+    background-color:gray;
+    
+}
+
+
+/* ------------------------------------------------Technical Language Skills------------------------------------------ */
+
+.technical{
+   
+    background-color:rgb(179, 245, 240);
+}
+
+
+/* -------------------------------------------------Trainings & Projects----------------------------------------------- */
+
+
+.training{
+      background-color: bisque;
+      text-align: center;
+  } 
+
+
+.row{
+    border-radius: 30px;
+}
+
+
+/* --------------------------------------------------Contact Details-------------------------------------------------- */
+
+
+.contact{
+    width: 800px;
+}
+
+
+.contact-me,
+.my-contact{
+    background-color:rgb(250, 229, 229);
+    text-align: center;
+    justify-content: center;
+}
+
+input,
+textarea{
+        width: 300px;
+        height: 30px;
+    }
+
+
+.submit{
+    font-weight: bold;
+    background-color:skyblue;
+    width: 100px;
+    height: 35px;
+}
+
+
+/* ------------------------------------------------footer----------------------------------------------------------- */
+
+.footer{
+
+    background-color: whitesmoke;
+
+}
+
+
+/* ------------------------------------------------Responsive--------------------------------------------------------- */
+
+
+@media (min-width:200px) and (max-width:570px){
+
+    .bgimg{
+        background: url('../images/bg3.jpg');
+        background-size: cover  ;
+        background-attachment: fixed;
+        width:900px;
+        height: 200vh;
+        background-position: center ;
+        background-repeat: no-repeat;
+        margin-top: -200px;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+        width: 800px;
+       
+    }
+    .headerset h1{
+        
+        margin-top: 300px; 
+       padding-top: 100px;
+
+}
+
+   .objective{
+        margin-right: 100px;
+   }
+    .about,
+    .about h1
+    {
+          width: 820px;
+          margin-left: 8px;
+       
+     } 
+     .academics{
+         margin-left: 20px;
+            }
+
+     .technical,
+     .skills h1,
+     .skills{  
+         width: 820px;
+        margin-left: 18px;
+
+    }
+    .project{
+        align-items: center;
+        justify-content: center;
+       margin-right: -475px;
+    }
+     .training{
+        width: 820px;
+         margin-left: 40px;
+     }
+
+    .others,
+    .personal{
+          width: 820px;
+          margin-left:20px;
+       
+     } 
+   .details{
+       
+    align-items: center;
+    justify-content: center;
+    margin-right: -475px;
+   }
+   .contact{
+    margin-left:45px;
+   }
+ 
+    input,
+    textarea{
+        width: 350px;
+        height: 30px;
+    }
+
+    footer{
+        width: 890px;;
+    }
+    
+    }
+
+
+
+   @media (min-width:570px) and (max-width:766px){
+    .bgimg{
+        background: url('../images/bg.jpg');
+        background-size: cover  ;
+        background-attachment: fixed;
+        width:800px;
+        height: 200vh;
+        background-position: center ;
+        background-repeat: no-repeat;
+        margin-top: -200px;
+    }
+
+    .academics{
+        
+        margin-left: -60px;
+    }
+
+    .headerset h1{
+        
+        margin-top: 300px;
+    } 
+   
+  
+  
+   .about h1,
+   .skills h1,
+   .skills,
+   .personal{
+
+       width: 700px;
+       margin-left: 50px;
+   }
+
+   .personal h1{
+       
+    margin-left: -20px;
+   }
+   
+   .objective{
+   
+    margin-left: 200px;
+   }
+
+   .academics{
+       
+    margin-left: 40px;
+
+    }
+ 
+    .technical, 
+    .training{
+     
+        margin-left: 120px;
+ 
+  } 
+
+    .others h1{
+        margin-left: -50px;
+  }
+  
+  
+   #box{
+      
+    margin-left: 50px;
+  }
+  footer{
+    width: 1000px;;
+}
+}
+
+@media (min-width:767px) and (max-width:1030px){
+
+    .bgimg{
+
+        background: url('../images/bg2.jpg');
+        background-size: cover  ;
+        background-attachment: fixed;
+        width:100%px;
+        height: 150vh;
+        background-position: center ;
+        background-repeat: no-repeat;
+        margin-top: -200px;
+    }
+   
+     .headerset h1{
+         font-size: 50px;
+         margin-top: 180px;  
+     }
+     
+     .headerset h2{
+         font-size: 35px;
+     }
+
+    
+    }
+
+
+    /* --------------------------------------------------The End--------------------------------------------------- */
+
+
+
+
+
